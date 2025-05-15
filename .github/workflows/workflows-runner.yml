@@ -10,5 +10,5 @@ jobs:
         run: |
           echo "Hello world from ${RUNNER_OS} on ${RUNNER_ARCHITECTURE}"
           echo "This is a ${GITHUB_JOB_NAME} job"
-          echo "runner OS: $RUNNER_OS}"
+          echo "runner OS: $RUNNER_OS"
   
