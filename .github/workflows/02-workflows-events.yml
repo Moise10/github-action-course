@@ -12,5 +12,5 @@ jobs:
     steps:
       - name: show-trigger
         run: |
-          echo "the workflow was triggered by a push event ${GITHUB_EVENT_NAME}"
+          echo "the workflow was triggered by a ${GITHUB_EVENT_NAME} event"
 
