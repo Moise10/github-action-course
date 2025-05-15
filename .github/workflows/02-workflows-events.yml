@@ -1,0 +1,16 @@
+name: 02-workflow-events
+on: 
+  push:
+  pull_request:
+    types: [opened, synchronize]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: show-trigger
+        run: |
+          echo "the workflow was triggered by a push event ${GITHUB_EVENT_NAME}"
+
