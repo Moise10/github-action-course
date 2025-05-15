@@ -1,14 +1,19 @@
 name: 03-workflows-runners
 on:
   push:
-  
 jobs:
-  ubuntu-runner:
+  ubuntu-echo:
     runs-on: ubuntu-latest
     steps:
       - name: Show OS
         run: |
-          echo "Hello world from ${RUNNER_OS} on ${RUNNER_ARCHITECTURE}"
-          echo "This is a ${GITHUB_JOB_NAME} job"
+          echo "This Job is running on ubuntu runner"
+          echo "runner OS: $RUNNER_OS"
+  windows-echo:
+    runs-on: windows-latest
+    steps:
+      - name: show OS
+        run: |
+          echo "This Job is running on windows runner"
           echo "runner OS: $RUNNER_OS"
   
