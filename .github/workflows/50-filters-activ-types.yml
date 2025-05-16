@@ -2,6 +2,8 @@ name: 05-filters-activ-types
 on:
   pull_request:
     types: [opened, synchronize]
+    branches:
+      - main
 jobs:
   echo:
     runs-on: ubuntu-latest
