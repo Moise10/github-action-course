@@ -1,0 +1,14 @@
+name: 05-2-event-filters
+on: 
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: show-triggers
+        run: |
+          echo "the workflow was triggered by a ${GITHUB_EVENT_NAME} event"
+          echo "the workflow was triggered by a ${GITHUB_EVENT_ACTION} 
