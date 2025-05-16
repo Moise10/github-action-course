@@ -1,10 +1,6 @@
 name: 03-workflows-runners
 on:
-<<<<<<< Updated upstream
   workflow_dispatch:
-=======
-  push:
->>>>>>> Stashed changes
 jobs:
   ubuntu-echo:
     runs-on: ubuntu-latest
