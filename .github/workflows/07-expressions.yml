@@ -25,6 +25,9 @@ jobs:
         if: ${{ inputs.debug && github.ref == 'refs/heads/main'  }}
         run: |
             echo "I was triggered from main"
+  Gretings:
+    runs-on: ubuntu-latest
+    steps:
       - name: Greetings
         run: |
             echo "Hello world"
