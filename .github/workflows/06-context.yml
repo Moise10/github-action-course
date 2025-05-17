@@ -1,4 +1,6 @@
 name: 06-context
+
+run-name: Deploy to ${ github.event_name } environment
 on:
   push:
   workflow_dispatch:
